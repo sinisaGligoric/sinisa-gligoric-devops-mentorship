@@ -6,7 +6,7 @@
 ### Level 0
 ssh -p 2220 bandit0@bandit.labs.overthewire.org *#konekcija na server putem SSH-a protokola i porta 2220*
 
-![Level_0](screenshots\Level_0.png)
+![Level_0](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-2-bandit-labs/week-2/screenshots/Level_0.png?raw=true)
 
 ----------------------------------
 ### Level 1
@@ -18,7 +18,7 @@ ls -lh *#izlistaj sve fajlove -l long listing -h human-readable*
 
 cat readme *#prikazi u konzoli sadrzaj fajla readme*
 
-![Level_1](screenshots\Level_1.png)
+![Level_1](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-2-bandit-labs/week-2/screenshots/Level_1.png?raw=true)
 
 ----------------------------------
 
@@ -31,7 +31,7 @@ ls -lh *#izlistaj sve fajlove -l long listing -h human-readable*
 
 cat ./- *#prikazi u konzoli sadrzaj fajla -*
 
-![Level_2](screenshots\Level_2.png)
+![Level_2](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-2-bandit-labs/week-2/screenshots/Level_2.png?raw=true)
 
 -----------------------------------
 
@@ -44,7 +44,7 @@ ls -lh *#izlistaj sve fajlove -l long listing -h human-readable*
 
 cat spaces\ in\ this\ filename *#prikazi u konzoli sadrzaj fajla 'spaces in this filename'*
 
-![Level_3](screenshots\Level_3.png)
+![Level_3](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-2-bandit-labs/week-2/screenshots/Level_3.png?raw=true)
 
 -----------------------------------
 
@@ -61,7 +61,7 @@ ls -lah *#izlistaj sve fajlove -l long listing -h human-readable -a hidden files
 
 cat .hidden *#prikazi u konzoli sadrzaj fajla .hidden*
 
-![Level_4](screenshots\Level_4.png)
+![Level_4](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-2-bandit-labs/week-2/screenshots/Level_4.png?raw=true)
 
 ------------------------------------
 
@@ -90,7 +90,7 @@ cat ./-file06
 
 cat ./-file07 *#prikazi u konzoli sadrzaj fajla -file07*
 
-![Level_5](screenshots\Level_5.png)
+![Level_5](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-2-bandit-labs/week-2/screenshots/Level_5.png?raw=true)
 
 ---------------------------------
 
@@ -107,7 +107,7 @@ ls -lh *#izlistaj sve fajlove -l long listing -h human readable*
 
 find ./* -type f -size 1033c *#pronađi sve fajlove veličine 1033 bajta u svim direktorijima trenutnog direktorija 'inhere'*
 
-![Level_6](screenshots\Level_6.png)
+![Level_6](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-2-bandit-labs/week-2/screenshots/Level_6.png?raw=true)
 
 -------------------------------------
 
@@ -124,7 +124,7 @@ find ./* -user bandit7 -group bandit6 -size 33c -type f *#pronadji sve fajlove k
 
 cat ./var/lib/dpkg/info/bandit7.password *#prikazi sadrzaj fajla bandit7.password*
 
-![Level_7](screenshots\Level_7.png)
+![Level_7](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-2-bandit-labs/week-2/screenshots/Level_7.png?raw=true)
 
 -------------------------------------
 
@@ -137,7 +137,7 @@ ls -lh *#izlistaj sve fajlove -l long listing -h human readable*
 
 grep -w 'millionth' data.txt *#pronađi riječ **millionth** u fajlu data.txt*
 
-![Level_8](screenshots\Level_8.png)
+![Level_8](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-2-bandit-labs/week-2/screenshots/Level_8.png?raw=true)
 
 ---------------------------------------
 
@@ -150,7 +150,7 @@ ls -lh *#izlistaj sve fajlove -l long listing -h human readable*
 
 sort data.txt | uniq -u *#sortiraj abecedno sadrzaj fajla data.txt te filtriraj samo jedinstvene redove tj. redove koji se ne ponavljaju*
 
-![Level_9](screenshots\Level_9.png)
+![Level_9](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-2-bandit-labs/week-2/screenshots/Level_9.png?raw=true)
 
 -------------------------------------
 
@@ -163,7 +163,7 @@ ls -lh *#izlistaj sve fajlove -l long listing -h human readable*
 
 strings data.txt | grep '^==' *#putem strings komande filtriramo sve stringove iz izvršnih fajlova, te dalje putem grep komande pretražujemo sve stringove koji počinju sa '=='*
 
-![Level_10](screenshots\Level_10.png)
+![Level_10](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-2-bandit-labs/week-2/screenshots/Level_10.png?raw=true)
 
 ----------------------------------------
 
@@ -174,7 +174,7 @@ ls -lh *#izlistaj sve fajlove -l long listing -h human readable*
 
 base64 --decode data.txt *#komandom base64 prosljedjujemo opciju --decode kako bi dekodovali fajl data.txt*
 
-![Level_11](screenshots\Level_11.png)
+![Level_11](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-2-bandit-labs/week-2/screenshots/Level_11.png?raw=true)
 
 -----------------------------------
 ## KRAJ
