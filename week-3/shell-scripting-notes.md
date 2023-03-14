@@ -13,7 +13,7 @@
 ## Chapter 13
 
 ### `test1.sh`
-![test1.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/scripts/test1.sh)
+[test1.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/scripts/test1.sh)
 ![test1.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test1.png)
 
 ### `test1b.sh`
