@@ -21,7 +21,7 @@ do
    echo The next state is $test
 done
 ```
-![test1.sh](img_url)
+![test1.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test1.png)
 
 ### `test1b.sh`
 ```
@@ -35,9 +35,9 @@ done
 test=Connecticut
  echo "Wait, now we're visiting $test"
 ```
-~[test1b.sh](img_url)
+~[test1b.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test1b.png)
 
-### `badtest.sh`
+### `badtest1.sh`
 ```
 #!/bin/bash
 # another example of how not to use the for command
@@ -46,7 +46,7 @@ do
   echo "word:$test"
 done
 ```
-~[badtest.sh](img_url)
+~[badtest1.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/badtest1.png)
 
 
 ### `test2.sh`
@@ -58,7 +58,7 @@ do
   echo "word:$test"
 done
 ```
-~[test2.sh](img_url)
+~[test2.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test2.png)
 
 ### `badtest2.sh`
 ```
@@ -69,7 +69,7 @@ do
   echo "Now going to $test"
 done
 ```
-~[badtest2.sh](img_url)
+~[badtest2.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/badtest2.png)
 
 ### `test3.sh`
 ```
@@ -80,7 +80,7 @@ do
   echo "Now going to $test"
 done
 ```
-~[test3.sh](img_url)
+~[test3.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test3.png)
 
 ### `test4.sh`
 ```
@@ -93,7 +93,7 @@ do
   echo "Have you ever visited $state?"
 done
 ```
-~[test4.sh](img_url)
+~[test4.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test4.png)
 
 ### `test5.sh`
 ```
@@ -105,7 +105,7 @@ do
   echo "Visit beautiful $state"
 done
 ```
-~[test5.sh](img_url)
+~[test5.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test5.png)
 
 ### `test5b.sh`
 ```
@@ -119,7 +119,7 @@ do
   echo "Visit beautiful $state"
 done
 ```
-~[test5b.sh](img_url)
+~[test5b.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test5b.png)
 
 ### `test6.sh`
 ```
@@ -136,7 +136,7 @@ do
   fi
 done
 ```
-~[test6.sh](img_url)
+~[test6.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test6.png)
 
 ### `test7.sh`
 ```
@@ -155,7 +155,7 @@ do
  fi
 done
 ```
-~[test7.sh](img_url)
+~[test7.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test7.png)
 
 ### `test8.sh`
 ```
@@ -166,7 +166,7 @@ do
   echo "The next number is $i"
 done
 ```
-~[test8.sh](img_url)
+~[test8.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test8.png)
 
 ### `test9.sh`
 ```
@@ -177,7 +177,7 @@ do
   echo "$a - $b"
 done
 ```
-~[test9.sh](img_url)
+~[test9.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test9.png)
 
 ### `test10.sh`
 ```
@@ -190,7 +190,7 @@ do
   var1=$[ $var1 - 1 ]
 done
 ```
-~[test10.sh](img_url)
+~[test10.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test10.png)
 
 ### `test11.sh`
 ```
@@ -204,7 +204,7 @@ do
   var1=$[ $var1 - 1 ]
 done
 ```
-~[test11.sh](img_url)
+~[test11.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test11.png)
 
 ### `test12.sh`
 ```
@@ -217,7 +217,7 @@ do
   var1=$[ $var1 - 25 ]
 done
 ```
-~[test12.sh](img_url)
+~[test12.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test12.png)
 
 ### `test13.sh`
 ```
@@ -231,7 +231,7 @@ do
 var1=$[ $var1 - 25 ]
 done
 ```
-~[test13.sh](img_url)
+~[test13.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test13.png)
 
 ### `test14.sh`
 ```
@@ -246,7 +246,7 @@ do
   done
 done
 ```
-~[test14.sh](img_url)
+~[test14.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test14.png)
 
 ### `test15.sh`
 ```
@@ -264,7 +264,7 @@ do
   var1=$[ $var1 - 1 ]
 done
 ```
-~[test15.sh](img_url)
+~[test15.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test15.png)
 
 ### `test16.sh`
 ```
@@ -284,7 +284,7 @@ do
   var1=$[ $var1 - 1 ]
 done
 ```
-~[test16.sh](img_url)
+~[test16.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test16.png)
 
 ### `test16b.sh`
 ```
@@ -302,7 +302,7 @@ do
   done
 done
 ```
-~[test16b.sh](img_url)
+~[test16b.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test16b.png)
 
 ### `test17.sh`
 ```
@@ -318,7 +318,7 @@ do
 done
 echo "The for loop is completed"
 ```
-~[test17.sh](img_url)
+~[test17.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test17.png)
 
 ### `test18.sh`
 ```
@@ -336,7 +336,7 @@ do
 done
 echo "The while loop is completed"
 ```
-~[test18.sh](img_url)
+~[test18.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test18.png)
 
 ### `test19.sh`
 ```
@@ -355,7 +355,7 @@ do
   done
 done
 ```
-~[test19.sh](img_url)
+~[test19.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test19.png)
 
 ### `test20.sh`
 ```
@@ -374,7 +374,7 @@ do
   done
 done
 ```
-~[test20.sh](img_url)
+~[test20.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test20.png)
 
 ### `test21.sh`
 ```
@@ -389,7 +389,7 @@ do
   echo "Iteration number: $var1"
 done
 ```
-~[test21.sh](img_url)
+~[test21.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test21.png)
 
 ### `badtest3.sh`
 ```
@@ -407,7 +407,7 @@ do
   var1=$[ $var1 + 1 ]
 done
 ```
-~[badtest3.sh](img_url)
+~[badtest3.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/badtest3.png)
 
 ### `test22.sh`
 ```
@@ -427,7 +427,7 @@ do
   done
 done
 ```
-~[test22.sh](img_url)
+~[test22.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test22.png)
 
 ### `test23.sh`
 ```
@@ -439,7 +439,7 @@ do
 done > test23.txt
 echo "The command is finished."
 ```
-~[test23.sh](img_url)
+~[test23.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test23.png)
 
 ### `test24.sh`
 ```
@@ -451,7 +451,7 @@ do
 done | sort
 echo "This completes our travels"
 ```
-~[test24.sh](img_url)
+~[test24.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test24.png)
 
 ### `test25.sh`
 ```
@@ -470,7 +470,7 @@ do
   done
 done
 ```
-~[test25.sh](img_url)
+~[test25.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test25.png)
 
 ### `test26.sh`
 ```
@@ -483,14 +483,15 @@ do
   useradd -c "$name" -m $userid
 done < "$input"
 ```
-~[test26.sh](img_url)
+~[test26.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test26.png)
+
+---------------------------------------------------------------------------------
+
+## Chapter 14
 
 ### `unknown.sh`
 ```
 ```
 ~[unknown.sh](img_url)
 
-### `unknown.sh`
-```
-```
-~[unknown.sh](img_url)
+
