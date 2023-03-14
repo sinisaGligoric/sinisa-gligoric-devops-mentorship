@@ -13,7 +13,14 @@
 ## Chapter 13
 
 ### `test1.sh`
-[test1.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/scripts/test1.sh)
+```
+#!/bin/bash
+# basic for command
+for test in Alabama Alaska Arizona Arkansas California Colorado
+do
+   echo The next state is $test
+done
+```
 ![test1.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test1.png)
 
 ### `test1b.sh`
