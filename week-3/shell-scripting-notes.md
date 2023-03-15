@@ -485,7 +485,23 @@ done < "$input"
 ```
 ![test26.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-13/output-screenshots/test26.png)
 
----------------------------------------------------------------------------------
+## Summary
+
+Looping is an integral part of programming. The bash shell provides three looping commands that you can use in your scripts.
+
+The `for` command allows you to iterate through a list of values, either supplied within the command line, contained in a variable, or obtained by using file globbing, to extract file and directory names from a wildcard character.
+
+The `while` command provides a method to loop based on the condition of a command, using either ordinary commands or the test command, which allows you to test conditions of variables. As long as the command (or condition) produces a zero exit status, the `while` loop continues to iterate through the specified set of commands.
+
+The `until` command also provides a method to iterate through commands, but it bases its iterations on a command (or condition) producing a non-zero exit status. This feature allows you to set a condition that must be met before the iteration stops.
+
+You can combine loops in shell scripts, producing multiple layers of loops. The bash shell provides the `continue` and `break` commands, which allow you to alter the flow of the normal loop process based on different values within the loop.
+
+The bash shell also allows you to use standard command redirection and piping to alter the output of a loop. You can use redirection to redirect the output of a loop to a file or piping to redirect the output of a loop to another command. This provides a wealth of features with which you can control your shell script execution.
+
+The next chapter discusses how to interact with your shell script user. Often, shell scripts aren’t completely self-contained. They require some sort of external data that must be supplied at the time you run them. The next chapter discusses different methods with which you can provide real-time data to your shell scripts for processing. 
+
+------------------------------------------------------------------------------------------------------------
 
 ## Chapter 14
 
@@ -962,7 +978,31 @@ echo "Finished processing the file"
 ```
 ![test28.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test28.png)
 
----------------------------------------------------------------------
+## Summary
+
+This chapter showed three methods for retrieving data from the script user. Command line parameters allow users to enter data directly on the command line when they run the script. The script uses positional parameters to retrieve the command line parameters and assign them to variables.
+
+The `shift` command allows you to manipulate the command line parameters by rotating them within the positional parameters. This command allows you to easily iterate through the parameters without knowing how many parameters are available.
+
+You can use three special variables when working with command line parameters. The shell sets the `$#` variable to the number of parameters entered on the command line. The `$*` variable contains all the parameters as a single string, and the `$@` variable contains all the parameters as separate words. These variables come in handy when you’re trying to process long parameter lists.
+
+Besides parameters, your script users can use command line options to pass information to your script. Command line options are single letters preceded by a dash. Different options can be assigned to alter the behavior of your script.
+
+The bash shell provides three ways to handle command line options.
+
+The first way is to handle them just like command line parameters. You can iterate through the options using the positional parameter variables, processing each option as it appears on the command line.
+
+Another way to handle command line options is with the `getopt` command. This command converts command line options and parameters into a standard format that you can process in your script. The getopt command allows you to specify which letters it recognizes as options and which options require an additional parameter value. The getopt command processes the standard command line parameters and outputs the options and parameters in the proper order.
+
+The final method for handling command line options is via the `getopts` command (note that it’s plural). The `getopts` command provides more advanced processing of the command line parameters. It allows for multi-value parameters, along with identifying options not defined by the script.
+
+An interactive method to obtain data from your script users is the `read` command. The `read` command allows your scripts to query users for information and wait. The `read` command places any data entered by the script user into one or more variables, which you can use within the script.
+
+Several options are available for the `read` command that allow you to customize the data input into your script, such as using hidden data entry, applying timed data entry, and requesting a specific number of input characters.
+
+In the next chapter, we look further into how bash shell scripts output data. So far, you’ve seen how to display data on the monitor and redirect it to a file. Next, we explore a few other options that you have available not only to direct data to specific locations but also to direct specific types of data to specific locations. This will help make your shell scripts look professional! 
+
+---------------------------------------------------------------------------------------------
 
 ## Chapter 15
 
@@ -973,7 +1013,7 @@ echo "Finished processing the file"
 echo "This is an error" >&2
 echo "This is normal output"
 ```
-![test8.sh](img_url)
+![test8.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-15/output-screenshots/test8.png)
 
 ### `test9.sh`
 ```bash
@@ -982,7 +1022,7 @@ echo "This is normal output"
 echo "This is an error" >&2
 echo "This is normal output"
 ```
-![test9.sh](img_url)
+![test9.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-15/output-screenshots/test9.png)
 
 ### `test10.sh`
 ```bash
@@ -993,7 +1033,7 @@ echo "This is a test of redirecting all output"
 echo "from a script to another file."
 echo "without having to redirect every individual line"
 ```
-![test10.sh](img_url)
+![test10.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-15/output-screenshots/test10.png)
 
 ### `test11.sh`
 ```bash
@@ -1006,7 +1046,7 @@ exec 1> testout
 echo "This output should go to the testout file"
 echo "but this should go to the testerror file" >&2
 ```
-![test11.sh](img_url)
+![test11.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-15/output-screenshots/test11.png)
 
 ### `test12.sh`
 ```bash
@@ -1020,7 +1060,7 @@ do
   count=$[ $count + 1 ]
 done
 ```
-![test12.sh](img_url)
+![test12.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-15/output-screenshots/test12.png)
 
 ### `test13.sh`
 ```bash
@@ -1031,7 +1071,7 @@ echo "This should display on the monitor"
 echo "and this should be stored in the file" >&3
 echo "Then this should be back on the monitor"
 ```
-![test13.sh](img_url)
+![test13.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-15/output-screenshots/test13.png)
 
 ### `test14.sh`
 ```bash
@@ -1044,7 +1084,7 @@ echo "along with this line."
 exec 1>&3
 echo "Now things should be back to normal"
 ```
-![test14.sh](img_url)
+![test14.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-15/output-screenshots/test14.png)
 
 ### `test15.sh`
 ```bash
@@ -1065,7 +1105,7 @@ case $answer in
   N|n) echo "Sorry, this is the end.";;
 esac
 ```
-![test15.sh](img_url)
+![test15.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-15/output-screenshots/test15.png)
 
 ### `test16.sh`
 ```bash
@@ -1076,7 +1116,7 @@ read line <&3
 echo "Read: $line"
 echo "This is a test line" >&3
 ```
-![test16.sh](img_url)
+![test16.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-15/output-screenshots/test16.png)
 
 ### `badtest.sh`
 ```bash
@@ -1087,7 +1127,7 @@ echo "This is a test line of data" >&3
 exec 3>&-
 echo "This won't work" >&3
 ```
-![badtest.sh](img_url)
+![badtest.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-15/output-screenshots/badtest.png)
 
 ### `test17.sh`
 ```bash
@@ -1100,7 +1140,7 @@ cat test17file
 exec 3> test17file
 echo "This'll be bad" >&3
 ```
-![test17.sh](img_url)
+![test17.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-15/output-screenshots/test17.png)
 
 ### `test18.sh`
 ```bash
@@ -1111,7 +1151,7 @@ exec 6> test18file2
 exec 7< testfile
 /usr/bin/lsof -a -p $$ -d0,1,2,3,6,7
 ```
-![test18.sh](img_url)
+![test18.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-15/output-screenshots/test18.png)
 
 ### `test19.sh`
 ```bash
@@ -1128,7 +1168,7 @@ echo "Done creating temp file. The contents are:"
 cat $tempfile
 rm -f $tempfile 2> /dev/null
 ```
-![test19.sh](img_url)
+![test19.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-15/output-screenshots/test19.png)
 
 ### `test20.sh`
 ```bash
@@ -1141,7 +1181,7 @@ echo "The temp file is located at: $tempfile"
 cat $tempfile
 rm -f $tempfile
 ```
-![test20.sh](img_url)
+![test20.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-15/output-screenshots/test20.png)
 
 ### `test21.sh`
 ```bash
@@ -1157,7 +1197,7 @@ echo "Sending data to directory $tempdir"
 echo "This is a test line of data for $tempfile1" >&7
 echo "This is a test line of data for $tempfile2" >&8
 ```
-![test21.sh](img_url)
+![test21.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-15/output-screenshots/test21.png)
 
 ### `test22.sh`
 ```bash
@@ -1168,7 +1208,7 @@ echo "This is the start of the test" | tee $tempfile
 echo "This is the second line of the test" | tee -a $tempfile
 echo "This is the end of the test" | tee -a $tempfile
 ```
-![test22.sh](img_url)
+![test22.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-15/output-screenshots/test22.png)
 
 ### `test23.sh`
 ```bash
@@ -1184,11 +1224,11 @@ do
 EOF
 done < ${1}
 ```
-![test23.sh](img_url)
+![test23.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-15/output-screenshots/test23.png)
 
-## Summary - Chapter 15
+## Summary
 
-Understanding how the bash shell handles input and output can come in handy when creating your scripts You can manipulate both how the script receives data and how it displays data, to customize your script for any environment. You can redirect the input of a script from the standard input (STDIN) to any file on the system. You can also redirect the output of the script from the standard output (STDOUT) to any file on the system.
+Understanding how the bash shell handles input and output can come in handy when creating your scripts. You can manipulate both how the script receives data and how it displays data, to customize your script for any environment. You can redirect the input of a script from the standard input (STDIN) to any file on the system. You can also redirect the output of the script from the standard output (STDOUT) to any file on the system.
 
 Besides the STDOUT, you can redirect any error messages your script generates by redirecting the STDERR output. This is accomplished by redirecting the file descriptor associated with the STDERR output, which is file descriptor 2. You can redirect STDERR output to the same file as the STDOUT output or to a completely separate file. This enables you to separate normal script messages from any error messages generated by the script.
 
