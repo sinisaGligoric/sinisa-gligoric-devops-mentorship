@@ -1267,7 +1267,7 @@ done
 echo "This is the end of the test script"
 #
 ```
-![test1.sh](img_url)
+![test1.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-16/output-screenshots/test1.png)
 
 ### `test2.sh`
 ```bash
@@ -1285,7 +1285,7 @@ do
 done
 #
 ```
-![test2.sh](img_url)
+![test2.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-16/output-screenshots/test2.png)
 
 ### `test3.sh`
 ```bash
@@ -1313,7 +1313,7 @@ do
 done
 #
 ```
-![test3.sh](img_url)
+![test3.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-16/output-screenshots/test3.png)
 
 ### `test3b.sh`
 ```bash
@@ -1342,7 +1342,7 @@ do
   count=$[ $count + 1 ]
 done
 ```
-![test3b.sh](img_url)
+![test3b.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-16/output-screenshots/test3b.png)
 
 ### `test4.sh`
 ```bash
@@ -1357,7 +1357,7 @@ do
 done
 #
 ```
-![test4.sh](img_url)
+![test4.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-16/output-screenshots/test4.png)
 
 ### `test5.sh`
 ```bash
@@ -1376,7 +1376,7 @@ done
 echo "Test script is complete"
 #
 ```
-![test5.sh](img_url)
+![test5.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-16/output-screenshots/test5.png)
 
 ### `test6.sh`
 ```bash
@@ -1384,7 +1384,7 @@ echo "Test script is complete"
 echo 'This is Test Script #1'
 sleep 20
 ```
-![test6.sh](img_url)
+![test6.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-16/output-screenshots/test6_test7_test8_test9.png)
 
 ### `test7.sh`
 ```bash
@@ -1392,7 +1392,7 @@ sleep 20
 echo 'This is Test Script #2'
 sleep 20
 ```
-![test7.sh](img_url)
+![test7.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-16/output-screenshots/test6_test7_test8_test9.png)
 
 ### `test8.sh`
 ```bash
@@ -1400,7 +1400,7 @@ sleep 20
 echo 'And...another Test Script'
 sleep 20
 ```
-![test8.sh](img_url)
+![test8.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-16/output-screenshots/test6_test7_test8_test9.png)
 
 ### `test9.sh`
 ```bash
@@ -1408,7 +1408,7 @@ sleep 20
 echo 'Then...there was one more test script'
 sleep 20
 ```
-![test9.sh](img_url)
+![test9.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-16/output-screenshots/test6_test7_test8_test9.png)
 
 ### `nohup` `test1.sh`
 ```bash
@@ -1430,7 +1430,7 @@ done
 echo "This is the end of the test script"
 #
 ```
-![nohup_test1.sh](img_url)
+![nohup_test1.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-16/output-screenshots/nohup_test1.png)
 
 ### `test10.sh`
 ```bash
@@ -1450,14 +1450,14 @@ done
 echo "End of script..."
 #
 ```
-![test10.sh](img_url)
+![test10.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-16/output-screenshots/test10.png)
 
 ### `test11.sh`
 ```bash
 #!/bin/bash
 sleep 60
 ```
-![test11.sh](img_url)
+![test11.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-16/output-screenshots/test11_test12.png)
 
 ### `test12.sh`
 ```bash
@@ -1465,14 +1465,14 @@ sleep 60
 sleep 20
 echo "This is the script's end"
 ```
-![test12.sh](img_url)
+![test12.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-16/output-screenshots/test11_test12.png)
 
 ### `renice` `test11.sh`
 ```bash
 #!/bin/bash
 sleep 60
 ```
-![renice_test11.sh](img_url)
+![renice_test11.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-16/output-screenshots/renice_test11.png)
 
 ### `test13.sh`
 ```bash
@@ -1485,7 +1485,20 @@ sleep 5
 echo "This is the script's end..."
 #
 ```
-![test13.sh](img_url)
+![test13.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-16/output-screenshots/test13.png)
+
+### `test13b.sh`
+```bash
+#!/bin/bash
+# Test using at command
+#
+echo "This script ran at $(date +%B%d,%T)" > test13b.out
+echo >> test13b.out
+sleep 5
+echo "This is the script's end..." >> test13b.out
+#
+```
+![test13b.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-16/output-screenshots/test13b.png)
 
 ## Summary
 
