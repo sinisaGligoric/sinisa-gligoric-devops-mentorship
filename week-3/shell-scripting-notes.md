@@ -1247,8 +1247,264 @@ In Chapter 16, you’ll see how to control and run your scripts. Linux provides 
 ---------------------------------------------------------------------------------------------------
 ## Chapter 16
 
-### `unknown.sh`
+### `test1.sh`
 ```bash
+!/bin/bash
+# Testing signal trapping
+#
+trap "echo ' Sorry! I have trapped Ctrl-C'" SIGINT
+#
+echo This is a test script
+#
+count=1
+while [ $count -le 10 ]
+do
+  echo "Loop #$count"
+  sleep 1
+  count=$[ $count + 1 ]
+done
+#
+echo "This is the end of the test script"
+#
 ```
-![unknown.sh](img_url)
+![test1.sh](img_url)
+
+### `test2.sh`
+```bash
+#!/bin/bash
+# Trapping the script exit
+#
+trap "echo Goodbye..." EXIT
+#
+count=1
+while [ $count -le 5 ]
+do
+  echo "Loop #$count"
+  sleep 1
+  count=$[ $count + 1 ]
+done
+#
+```
+![test2.sh](img_url)
+
+### `test3.sh`
+```bash
+#!/bin/bash
+# Modifying a set trap
+#
+trap "echo 'Sorry... Ctrl-C is trapped.' " SIGINT
+#
+count=1
+while [ $count -le 5 ]
+do
+  echo "Loop #$count"
+  sleep 1
+  count=$[ $count + 1 ]
+done
+#
+trap "echo ' I modified the trap!'" SIGINT
+#
+count=1
+while [ $count -le 5 ]
+do
+  echo "Second Loop #$count"
+  sleep 1
+  count=$[ $count + 1 ]
+done
+#
+```
+![test3.sh](img_url)
+
+### `test3b.sh`
+```bash
+#!/bin/bash
+# Removing a set trap
+#
+trap "echo 'Sorry... Ctrl-c is trapped.'" SIGINT
+#
+count=1
+while [ $count -le 5 ]
+do
+  echo "Loop #$count" 
+  sleep 1
+  count=$[ $count + 1 ]
+done
+#
+# Remove the trap
+trap -- SIGINT
+echo "I just removed the trap"
+#
+count=1
+while [ $count -le 5 ]
+do
+  echo "Second Loop #$count"
+  sleep 1
+  count=$[ $count + 1 ]
+done
+```
+![test3b.sh](img_url)
+
+### `test4.sh`
+```bash
+#!/bin/bash
+# Test running in the background
+#
+count=1
+while [ $count -le 10 ]
+do
+  sleep 1
+  count=$[ $count + 1 ]
+done
+#
+```
+![test4.sh](img_url)
+
+### `test5.sh`
+```bash
+#!/bin/bash
+# Test running in the background with output
+#
+echo "Start the test script"
+count=1
+while [ $count -le 5 ]
+do
+  echo "Loop #$count"
+  sleep 5
+  count=$[ $count + 1 ]
+done
+#
+echo "Test script is complete"
+#
+```
+![test5.sh](img_url)
+
+### `test6.sh`
+```bash
+#!/bin/bash
+echo 'This is Test Script #1'
+sleep 20
+```
+![test6.sh](img_url)
+
+### `test7.sh`
+```bash
+#!/bin/bash
+echo 'This is Test Script #2'
+sleep 20
+```
+![test7.sh](img_url)
+
+### `test8.sh`
+```bash
+#!/bin/bash
+echo 'And...another Test Script'
+sleep 20
+```
+![test8.sh](img_url)
+
+### `test9.sh`
+```bash
+!/bin/bash
+echo 'Then...there was one more test script'
+sleep 20
+```
+![test9.sh](img_url)
+
+### `nohup` `test1.sh`
+```bash
+#!/bin/bash
+# Testing signal trapping
+#
+trap "echo ' Sorry! I have trapped Ctrl-C'" SIGINT
+#
+echo This is a test script
+#
+count=1
+while [ $count -le 10 ]
+do
+  echo "Loop #$count"
+  sleep 1
+  count=$[ $count + 1 ]
+done
+#
+echo "This is the end of the test script"
+#
+```
+![nohup_test1.sh](img_url)
+
+### `test10.sh`
+```bash
+#!/bin/bash
+# Test job control
+#
+echo "Script Process ID: $$"
+#
+count=1
+while [ $count -le 10 ]
+do
+  echo "Loop #$count"
+  sleep 10
+  count=$[ $count + 1 ]
+done
+#
+echo "End of script..."
+#
+```
+![test10.sh](img_url)
+
+### `test11.sh`
+```bash
+#!/bin/bash
+sleep 60
+```
+![test11.sh](img_url)
+
+### `test12.sh`
+```bash
+#!/bin/bash
+sleep 20
+echo "This is the script's end"
+```
+![test12.sh](img_url)
+
+### `renice` `test11.sh`
+```bash
+#!/bin/bash
+sleep 60
+```
+![renice_test11.sh](img_url)
+
+### `test13.sh`
+```bash
+#!/bin/bash
+# Test using at command
+#
+echo "This script ran at $(date +%B%d,%T)"
+echo
+sleep 5
+echo "This is the script's end..."
+#
+```
+![test13.sh](img_url)
+
+## Summary
+
+The Linux system allows you to control your shell scripts by using signals. The bash shell accepts signals and passes them on to any process running under the shell process. Linux signals allow you to easily kill a runaway process or temporarily pause a long-running process.
+
+You can use the `trap` statement in your scripts to catch signals and perform commands. This feature provides a simple way to control whether a user can interrupt your script while it’s running.
+
+By default, when you run a script in a terminal session shell, the interactive shell is suspended until the script completes. You can cause a script or command to run in background mode by adding an ampersand sign (&) after the command name. When you run a script or command in background mode, the interactive shell returns, allowing you to continue
+entering more commands. Any background processes run using this method are still tied to the terminal session. If you exit the terminal session, the background processes also exit.
+
+To prevent this from happening, use the `nohup` command. This command intercepts any signals intended for the command that would stop it — for example, when you exit the terminal session. This allows scripts to continue running in background mode even if you exit the terminal session.
+
+When you move a process to background mode, you can still control what happens to it. The `jobs` command allows you to view processes started from the shell session. After you know the job ID of a background process, you can use the `kill` command to send Linux signals to the process or use the `fg` command to bring the process back to the foreground in the shell session. You can suspend a running foreground process by using the Ctrl+Z key combination and place it back in background mode, using the `bg` command.
+
+The `nice` and `renice` commands allow you to change the priority level of a process. By giving a process a lower priority, you allow the CPU to allocate less time to it. This comes in handy when running long processes that can take lots of CPU time.
+
+In addition to controlling processes while they’re running, you can also determine when a process starts on the system. Instead of running a script directly from the command line interface prompt, you can schedule the process to run at an alternative time. You can accomplish this in several different ways. The `at` command enables you to run a script once at a preset time. The `cron` program provides an interface that can run scripts at a regularly scheduled interval.
+
+Finally, the Linux system provides script files for you to use for scheduling your scripts to run whenever a user starts a new bash shell. Similarly, the startup files, such as `.bashrc` , are located in every user’s home directory to provide a location to place scripts and commands that run with a new shell.
+
+In the next chapter, we look at how to write script functions. Script functions allow you to write code blocks once and then use them in multiple locations throughout your script.
 
