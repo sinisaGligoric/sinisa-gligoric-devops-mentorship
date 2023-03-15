@@ -2,7 +2,7 @@
 ## Scripts and screenshots below are captured during writing and executing scripts from the book `Linux Command Line and Shell Scripting Bible, 3rd Edition` - `Chapter 13`, `Chapter 14`, `Chapter 15` and `Chapter 16`.
 ----------------------------------------------------------------------------------
 
-# Table of Contents
+# table-of-contents
 ## 1. [Chapter 13](#chapter-13)
 ## 2. [Chapter 14](#chapter-14)
 ## 3. [Chapter 15](#chapter-15)
@@ -501,7 +501,7 @@ do
 done
 echo The factorial of $1 is $factorial
 ```
-![test1.sh](img_url)
+![test1.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test1.png)
 
 ### `test2.sh`
 ```bash
@@ -513,7 +513,7 @@ echo The first parameter is $1.
 echo The second parameter is $2.
 echo The total value is $total.
 ```
-![test2.sh](img_url)
+![test2.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test2.png)
 
 ### `test3.sh`
 ```bash
@@ -522,7 +522,7 @@ echo The total value is $total.
 #
 echo Hello $1, glad to meet you.
 ```
-![test3.sh](img_url)
+![test3.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test3.png)
 
 ### `test4.sh`
 ```bash
@@ -534,7 +534,7 @@ echo The tenth parameter is ${10}
 echo The eleventh parameter is ${11}
 echo The total is $total
 ```
-![test4.sh](img_url)
+![test4.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test4.png)
 
 ### `test5.sh`
 ```bash
@@ -543,7 +543,7 @@ echo The total is $total
 #
 echo The zero parameter is set to: $0
 ```
-![test5.sh](img_url)
+![test5.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test5.png)
 
 ### `test5b.sh`
 ```bash
@@ -555,7 +555,7 @@ echo
 echo The script name is: $name
 #
 ```
-![test5b.sh](img_url)
+![test5b.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test5b.png)
 
 ### `test6.sh`
 ```bash
@@ -576,7 +576,7 @@ fi
 echo
 echo The calculated value is $total
 ```
-![test6.sh](img_url)
+![test6.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test6.png)
 
 ### `test7.sh`
 ```bash
@@ -590,7 +590,7 @@ else
   echo "Sorry, you did not identify yourself. "
 fi
 ```
-![test7.sh](img_url)
+![test7.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test7.png)
 
 ### `test8.sh`
 ```bash
@@ -599,7 +599,7 @@ fi
 #
 echo There were $# parameters supplied.
 ```
-![test8.sh](img_url)
+![test8.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test8.png)
 
 ### `test9.sh`
 ```bash
@@ -616,7 +616,7 @@ else
   echo
 fi
 ```
-![test9.sh](img_url)
+![test9.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test9.png)
 
 ### `badtest1.sh`
 ```bash
@@ -625,7 +625,7 @@ fi
 #
 echo The last parameter was ${$#}
 ```
-![badtest1.sh](img_url)
+![badtest1.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/badtest1.png)
 
 ### `test10.sh`
 ```bash
@@ -639,7 +639,7 @@ echo The last parameter is ${!#}
 echo
 #
 ```
-![test10.sh](img_url)
+![test10.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test10.png)
 
 ### `test11.sh`
 ```bash
@@ -651,7 +651,7 @@ echo "Using the \$* method: $*"
 echo
 echo "Using the \$@ method: $@"
 ```
-![test11.sh](img_url)
+![test11.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test11.png)
 
 ### `test12.sh`
 ```bash
@@ -676,7 +676,7 @@ do
   count=$[ $count + 1 ]
 done
 ```
-![test12.sh](img_url)
+![test12.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test12.png)
 
 ### `test13.sh`
 ```bash
@@ -691,7 +691,7 @@ do
   shift
 done
 ```
-![test13.sh](img_url)
+![test13.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test13.png)
 
 ### `test14.sh`
 ```bash
@@ -703,7 +703,7 @@ echo "The original parameters: $*"
 shift 2
 echo "Here's the new first parameter: $1"
 ```
-![test14.sh](img_url)
+![test14.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test14.png)
 
 ### `test15.sh`
 ```bash
@@ -722,7 +722,7 @@ do
   shift
 done
 ```
-![test15.sh](img_url)
+![test15.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test15.png)
 
 ### `test16.sh`
 ```bash
@@ -749,7 +749,7 @@ do
   count=$[ $count + 1 ]
 done
 ```
-![test16.sh](img_url)
+![test16.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test16.png)
 
 ### `test17.sh`
 ```bash
@@ -778,7 +778,7 @@ do
   count=$[ $count + 1 ]
 done
 ```
-![test17.sh](img_url)
+![test17.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test17.png)
 
 ### `test18.sh`
 ```bash
@@ -810,7 +810,7 @@ do
   count=$[ $count + 1 ]
 done
 ```
-![test18.sh](img_url)
+![test18.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test18.png)
 
 ### `test19.sh`
 ```bash
@@ -828,7 +828,7 @@ do
   esac
 done
 ```
-![test19.sh](img_url)
+![test19.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test19.png)
 
 ### `test20.sh`
 ```bash
@@ -857,7 +857,7 @@ do
   count=$[ $count + 1 ]
 done
 ```
-![test20.sh](img_url)
+![test20.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test20.png)
 
 ### `test21.sh`
 ```bash
@@ -869,7 +869,7 @@ read name
 echo "Hello $name, welcome to my program. "
 #
 ```
-![test21.sh](img_url)
+![test21.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test21.png)
 
 ### `test22.sh`
 ```bash
@@ -881,7 +881,7 @@ days=$[ $age * 365 ]
 echo "That makes you over $days days old! "
 #
 ```
-![test22.sh](img_url)
+![test22.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test22.png)
 
 ### `test23.sh`
 ```bash
@@ -891,7 +891,7 @@ echo "That makes you over $days days old! "
 read -p "Enter your name: " first last
 echo "Checking data for $last, $first…"
 ```
-![test23.sh](img_url)
+![test23.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test23.png)
 
 ### `test24.sh`
 ```bash
@@ -902,7 +902,7 @@ read -p "Enter your name: "
 echo
 echo Hello $REPLY, welcome to my program.
 ```
-![test24.sh](img_url)
+![test24.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test24.png)
 
 ### `test25.sh`
 ```bash
@@ -917,7 +917,7 @@ else
   echo "Sorry, too slow! "
 fi
 ```
-![test25.sh](img_url)
+![test25.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test25.png)
 
 ### `test26.sh`
 ```bash
@@ -934,7 +934,7 @@ case $answer in
 esac
 echo "This is the end of the script"
 ```
-![test26.sh](img_url)
+![test26.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test26.png)
 
 ### `test27.sh`
 ```bash
@@ -945,7 +945,7 @@ read -s -p "Enter your password: " pass
 echo
 echo "Is your password really $pass? "
 ```
-![test27.sh](img_url)
+![test27.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test27.png)
 
 ### `test28.sh`
 ```bash
@@ -960,7 +960,7 @@ do
 done
 echo "Finished processing the file"
 ```
-![test28.sh](img_url)
+![test28.sh](https://github.com/sinisaGligoric/sinisa-gligoric-devops-mentorship/blob/week-3-shell-scripting/week-3/chapter-14/output-screenshots/test28.png)
 
 ---------------------------------------------------------------------
 
