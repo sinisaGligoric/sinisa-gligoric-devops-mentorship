@@ -83,7 +83,11 @@ else
   fi
 fi
 ```
-- From the terminal execute the resize.sh bash script to resize the attached EBS volume to 30 GiB `bash resize.sh 30`. - Now check the size of the attached EBS volume `df -h`. The following output should be produced:
+- From the terminal execute the resize.sh bash script to resize the attached EBS volume to 30 GiB `bash resize.sh 30`. 
+- Now check the size of the attached EBS volume `df -h`.
+
+The following output should be produced:
+
 ![ebs-volume-resizing-1](./images/ebs-volume-resizing-1.jpg)
 ![ebs-volume-resizing-2](./images/ebs-volume-resizing-2.jpg)
 
