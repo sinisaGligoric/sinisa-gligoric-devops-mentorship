@@ -89,6 +89,7 @@ fi
 The following output should be produced:
 
 ![ebs-volume-resizing-1](./images/ebs-volume-resizing-1.jpg)
+
 ![ebs-volume-resizing-2](./images/ebs-volume-resizing-2.jpg)
 
 
